@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS tutorial</title>
+  <link rel="stylesheet" href="css/loginForm.css">
 </head>
 <body>
   <h3 class="copy">Copy secure text</h3>
@@ -14,10 +15,44 @@
     <li>Apple2</li>
     <li>Apple3</li>
   </ul>
-  <button id="pre" class="click-me">Pre add</button>
-  <button id="post" class="click-me">Post add</button>
+  <button id="pre" class="click-me" style="width:auto;">Pre add</button>
+  <button id="post" class="click-me" style="width:auto;">Post add</button>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/" method="post">  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+  
   <script src="script.js"></script>
   <script src="js/for-in-loop.js"></script>
   <script src="js/event.js"></script>
+  <script src="js/formEvent.js"></script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+  </script>
 </body>
 </html>
