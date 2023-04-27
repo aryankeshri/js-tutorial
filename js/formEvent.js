@@ -1,3 +1,4 @@
+console.log("Form Event js");
 const form = document.querySelector(".modal-content");
 const username = document.querySelector("#username");
 const password = document.querySelector("#password");
