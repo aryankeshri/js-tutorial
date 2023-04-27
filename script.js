@@ -9,7 +9,7 @@ window.onclick = function(event) {
 
 const selectElement = document.getElementById("mySelect");
 const body = document.querySelector("body");
-const jsScripts = ["js/for-in-loop.js", "js/event.js", "js/formEvent.js", "js/array.js"];    
+const jsScripts = ["js/for-in-loop.js", "js/event.js", "js/formEvent.js", "js/array.js", "js/dateTime.js", "js/localStorage.js"];    
 
 jsScripts.map((js) => {
   let option  = document.createElement('option');

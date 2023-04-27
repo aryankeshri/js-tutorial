@@ -112,6 +112,7 @@ span.psw {
   padding: 5px;
   background-color: #6547ea;
   color: white;
+  margin: 5px;
 }
 
 @-webkit-keyframes animatezoom {
