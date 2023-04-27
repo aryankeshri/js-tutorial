@@ -106,6 +106,14 @@ span.psw {
   border: #e02a09;
 }
 
+.hour, .minute, .second {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: #6547ea;
+  color: white;
+}
+
 @-webkit-keyframes animatezoom {
   from {-webkit-transform: scale(0)} 
   to {-webkit-transform: scale(1)}

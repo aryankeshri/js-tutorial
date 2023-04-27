@@ -23,7 +23,7 @@ console.log('Slice one negative Array: ', arrSliceNegative);
 console.log('Slice both negative Array: ', arrSliceBothNegative);
 
 // Splice Method
-// Array.splice(index, deleteValue, valueToBeAdded)
+// Array.splice(start, deleteCount, item1, item2, item3 .....)
 const arrSplice = [1, 4, 7, 6, 8];
 const arraySplice = arrSplice.splice(1, 4);
 console.log('Splice Array: ', arraySplice);
@@ -95,3 +95,9 @@ const flatMapReturn = inventory.flatMap((item) => {
   }
 });
 console.log("Array after flatMap method: ", flatMapReturn);
+
+
+// insert item in specific index of array
+console.log("original Array: ", arr);
+arr.splice(2,0,30);
+console.log("inserted value Array: ", arr);
