@@ -1,3 +1,15 @@
+console.log(`----------- Event JavaScript -----------`);
+document.getElementById("event").innerHTML = `
+  <ul>
+    <li>Apple</li>
+    <li>Apple1</li>
+    <li>Apple2</li>
+    <li>Apple3</li>
+  </ul>
+  <button id="pre" class="click-me" style="width:auto;">Pre add</button>
+  <button id="post" class="click-me" style="width:auto;">Post add</button>
+`;
+
 const eventElement = document.querySelector(".click-me");
 console.log(eventElement);
 
