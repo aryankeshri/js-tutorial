@@ -45,7 +45,7 @@ request.addEventListener('readystatechange', ()=>{
 
 // callback function
 
-const todo = (callback) => {
+const callbackTodo = (callback) => {
   const c_request = new XMLHttpRequest();
   
   c_request.addEventListener('readystatechange', ()=>{
@@ -70,7 +70,7 @@ const todo = (callback) => {
 };
 
 
-todo((error, data) => {
+callbackTodo((error, data) => {
   console.log("callback function");
   console.log("Data: ", data);
   console.log("Error: ", error);

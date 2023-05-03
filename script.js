@@ -12,7 +12,7 @@ const body = document.querySelector("body");
 const jsScripts = [
   "js/for-in-loop.js", "js/event.js", "js/formEvent.js", "js/array.js", 
   "js/dateTime.js", "js/localStorage.js", "js/oops.js", "js/async.js",
-  "js/promise.js"
+  "js/promise.js", "js/array-destructuring.js"
 ];    
 
 jsScripts.map((js) => {

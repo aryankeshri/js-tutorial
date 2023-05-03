@@ -14,15 +14,17 @@ console.log("Week of the day: ", todayDate.getDay());
 
 
 const clock = document.querySelector(".clock");
+let h1 = document.createElement("h1");
 let block1 = document.createElement("button");
 let block2 = document.createElement("button");
 let block3 = document.createElement("button");
 
+h1.textContent = "Digital clock....";
 block1.setAttribute("class", "hour");
 block2.setAttribute("class", "minute");
 block3.setAttribute("class", "second");
 
-clock.append(block1, block2, block3);
+clock.append(h1, block1, block2, block3);
 
 const tick = () => {
   const tickClock = new Date();
