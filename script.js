@@ -9,7 +9,11 @@ window.onclick = function(event) {
 
 const selectElement = document.getElementById("mySelect");
 const body = document.querySelector("body");
-const jsScripts = ["js/for-in-loop.js", "js/event.js", "js/formEvent.js", "js/array.js", "js/dateTime.js", "js/localStorage.js"];    
+const jsScripts = [
+  "js/for-in-loop.js", "js/event.js", "js/formEvent.js", "js/array.js", 
+  "js/dateTime.js", "js/localStorage.js", "js/oops.js", "js/async.js",
+  "js/promise.js"
+];    
 
 jsScripts.map((js) => {
   let option  = document.createElement('option');
@@ -21,6 +25,7 @@ jsScripts.map((js) => {
 selectElement.addEventListener('change', (e) => {
   let custonScript = document.querySelector('.customScript');
   if(e.target.nodeName == "SELECT"){
+    console.clear();
     let scriptTag = document.createElement('Script');
     scriptTag.setAttribute('src', e.target.value);
     scriptTag.setAttribute('class', 'customScript');
